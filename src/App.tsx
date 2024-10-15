@@ -25,7 +25,7 @@ function App() {
             <h1>{prod.nome}</h1>
             <p>{prod.descricao}</p>
             <p>{prod.preco}</p>
-            <p>{prod.imagem}</p>
+            <img src={prod.imagem} alt="Imagem de Celular" />
           </div>
         )
       })}
