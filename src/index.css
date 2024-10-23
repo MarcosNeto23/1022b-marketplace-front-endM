@@ -12,6 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container-usuarios{
+  background-color: #f0f0f0; /* Cor de fundo clara */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  max-width: 600px; /* Largura máxima */
+  margin: 20px auto; /* Centraliza o contêiner */
+}
+
 
 a {
   font-weight: 500;
