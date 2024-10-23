@@ -40,7 +40,10 @@ function App() {
 
 
   return (
-    <>  
+    <> 
+    <div className='tudo'>
+
+
       <div className="container-produtos">
         <h2> Lista de Produtos:</h2>
         {produtos.map(prod=>{
@@ -66,6 +69,9 @@ function App() {
         ))}
       </div>
 
+
+      
+      </div> 
     </>
   )
 }
