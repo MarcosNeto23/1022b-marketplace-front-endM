@@ -24,7 +24,7 @@ function App() {
   //useEffect(O QUe fazer, Quando Fazer)
    // useEffect para buscar produtos
   useEffect(()=>{
-    fetch("http://localhost:800/produtos")
+    fetch("http://localhost:8000/produtos")
     .then(resposta=>resposta.json())
     .then(dados=>setProdutos(dados))
   },[])
