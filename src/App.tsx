@@ -32,7 +32,7 @@ function App() {
 
   // useEffect para buscar usuários
   useEffect(() => {
-    fetch("https://one022b-marketplace-fork-back-end.onrender.com/usuarios") // Altere para a URL correta do seu backend
+    fetch("https://localhost:8000/usuarios") // Altere para a URL correta do seu backend
       .then(resposta => resposta.json())
       .then(dados => setUsuarios(dados));
   }, []);
