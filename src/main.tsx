@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     path: "/cadastro-produto",
     element: <CadastroProduto/>,
   },
+  {
+    path: "/altear-produto/:id",
+    element: <AlterarProduto/>,
+  },
 ]);
 
 createRoot(document.getElementById('root')!).render(
