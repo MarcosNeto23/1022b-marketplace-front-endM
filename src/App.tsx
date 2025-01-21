@@ -9,7 +9,6 @@ type ProdutoType = {
   preco:string,
   imagem:string
 }
-
 function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]>([])
   //useEffect(O QUe fazer, Quando Fazer)
@@ -19,7 +18,7 @@ function App() {
     .then(dados=>setProdutos(dados))
   },[])
   function handleExcluir(id:number){
-    fetch(`http://localhost:8000/produtos/${id}`, {
+    fetch(`http://localhost:8000/produtos/${id}`,{
       method:"DELETE"
     })
     .then(resposta=>{
@@ -32,7 +31,6 @@ function App() {
       }
     })
   }
-
 
   return (
     <>  
