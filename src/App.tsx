@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>  
-      <div className="container-produtos">
+      <main className="container-produtos">
         {produtos.map(prod=>{
           return(
             <div key={prod.id} className="produto-item">
@@ -47,7 +47,7 @@ function App() {
             </div>
           )
         })}
-      </div>
+      </main>
       
     </>
   )

@@ -1,12 +1,12 @@
 header{
     background-color: rgb(168, 213, 255);
     color: white;
-    padding: 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    width: 100%;
 }
 header ul li{
     display: flex;
@@ -19,6 +19,7 @@ header ul li{
 }
 header ul li a{
     color: white;
+    padding: 5px;
     text-decoration: none;
 }
 header ul li a:hover{

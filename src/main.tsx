@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import CadastroProduto from './componentes/cadastroproduto/CadastroProduto.tsx';
 import AlterarProduto from './componentes/alterarproduto/AlterarProduto.tsx';
-import Header from './componentes/header/header.tsx';
+import Header from './componentes/header/Header.tsx';
 
 //Crie um comentário explicando o que faz o código abaixo
 //Cria uma instância do BrowserRouter e passa um array de objetos com as rotas da aplicação

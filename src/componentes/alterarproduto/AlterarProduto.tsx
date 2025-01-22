@@ -58,34 +58,37 @@ function AlterarProduto(){
         }
     
     return (
+        <main>
         <>
             <div>Alterar Produto {id}</div>
             <form onSubmit={handleForm}>
                 <div>
-                    <label htmlFor="id">id</label>
+                    <label htmlFor="id">Id</label>
                     <input type="text" name="id" value={id} readOnly />
                 </div>
                 <div>
-                    <label htmlFor="nome">nome</label>
+                    <label htmlFor="nome">Nome</label>
                     <input type="text" name="nome" value={nome} onChange={handleNome} />
                 </div>
                 <div>
-                    <label htmlFor="descricao">descricao</label>
+                    <label htmlFor="descricao">Descrição</label>
                     <input type="text" name="descricao" value={descricao} onChange={handleDescricao} />
                 </div>
                 <div>
-                    <label htmlFor="preco">preço</label>
+                    <label htmlFor="preco">Preço</label>
                     <input type="text" name="preco" value={preco} onChange={handlePreco} />
                 </div>
                 <div>
-                    <label htmlFor="imagem">imagem</label>
+                    <label htmlFor="imagem">Imagem</label>
                     <input type="text" name="imagem" value={imagem} onChange={handleImagem}/>
+                    {imagem && <img className="imagem-previa-uplod" src={imagem}/>}
                 </div>
                 <div>
-                    <input type="submit" value="Cadastrar"/>
+                    <input type="submit" value="Alterar"/>
                 </div>
             </form>
         </>
+        </main>
     )
 }
 

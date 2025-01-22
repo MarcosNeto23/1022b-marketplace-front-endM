@@ -52,33 +52,36 @@ export default function CadastroProduto(){
     }
 
     return(
+        <main>
         <>
             <h1>Tela Cadastro Produtos</h1>
             <form onSubmit={handleForm}>
                 <div>
-                    <label htmlFor="id">id</label>
+                    <label htmlFor="id">Id</label>
                     <input type="text" name="id" onChange={handleId} />
                 </div>
                 <div>
-                    <label htmlFor="nome">nome</label>
+                    <label htmlFor="nome">Nome</label>
                     <input type="text" name="nome" onChange={handleNome} />
                 </div>
                 <div>
-                    <label htmlFor="descricao">descricao</label>
+                    <label htmlFor="descricao">Descrição</label>
                     <input type="text" name="descricao" onChange={handleDescricao} />
                 </div>
                 <div>
-                    <label htmlFor="preco">preço</label>
+                    <label htmlFor="preco">Preço</label>
                     <input type="text" name="preco" onChange={handlePreco} />
                 </div>
                 <div>
-                    <label htmlFor="imagem">imagem</label>
+                    <label htmlFor="imagem">Imagem</label>
                     <input type="text" name="imagem" onChange={handleImagem}/>
+                    {imagem && <img className="imagem-previa-uplod" src={imagem}/>}
                 </div>
                 <div>
                     <input type="submit" value="Cadastrar"/>
                 </div>
             </form>
         </>
+        </main>
     )
 }
